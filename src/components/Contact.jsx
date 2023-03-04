@@ -16,12 +16,61 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (form.name === "" && form.email === "" && form.message === "") {
+      alert("Fields are empty");
+    } else {
+      setLoading(true);
+      emailjs
+        .send(
+          "service_cvq5jsi",
+          "template_2342ocl",
+          {
+            from_name: form.name,
+            to_name: "Yuvraj",
+            from_email: form.email,
+            to_email: "yuvi7860808034@gmail.com",
+            message: form.message,
+          },
+          "9Ka-4ajJeg2KC29Uu"
+        )
+        .then(() => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        }),
+        (error) => {
+          console.error(error);
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        };
+      // setLoading(false);
+      // alert("Thank you. I will get back to you as soon as possible");
+      // setForm({
+      //   name: "",
+      //   email: "",
+      //   message: "",
+      // });
+    }
+  };
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="xl:mt-8 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -31,7 +80,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-6 flex flex-col gap-8"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
@@ -42,6 +91,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-xl outline-none border-none font-medium"
+              required
             />
           </label>
           <label className="flex flex-col">
@@ -53,6 +103,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your web address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-xl outline-none border-none font-medium"
+              required
             />
           </label>
           <label className="flex flex-col">
@@ -64,6 +115,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What do you want say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-xl outline-none border-none font-medium"
+              required
             />
           </label>
           <button
