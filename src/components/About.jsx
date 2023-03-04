@@ -48,7 +48,7 @@ const About = () => {
         open source and remote work. A fast learner and go-getter with a proven
         ability to deliver high-quality software solutions.
       </motion.p>
-      <div className="mt-20 flex flex=wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

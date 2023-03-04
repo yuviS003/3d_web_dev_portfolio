@@ -15,19 +15,21 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-0"
+          className="flex items-center gap-2"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-28 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Yuvraj Singh &nbsp;
-            <span className="sm:block hidden">| &nbsp;Software Developer</span>
+          <img src={logo} alt="logo" className="w-14 rounded object-contain" />
+          <p className="text-white text-[14px] font-bold cursor-pointer flex">
+            Yuvraj&nbsp;
+            <span className="md:block hidden text">
+              |&nbsp;Software Developer
+            </span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((link, index) => {
             return (
               <li
@@ -42,7 +44,7 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="men u"
