@@ -22,6 +22,7 @@ import {
   carrent,
   jobit,
   tripguide,
+  refine,
   threejs,
   treleva,
 } from "../assets";
@@ -164,67 +165,44 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Yariga Properties",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Yariga is a web-based platform for buying, selling, and renting real estate. It features customizable search functions, property listings, and rental services. Yariga also provides useful tools such as mortgage calculators and legal advice to assist users in making informed decisions throughout the real estate process.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "refine",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "typescript",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: refine,
+    source_code_link: `https://github.com/yuviS003/MERN-dashboard`,
+    live_link: `https://refine-dashboard-seven.vercel.app/`,
   },
   {
     name: "Trip Guide",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "TripGuide is a user-friendly web-based platform for booking tours and hotels. It features customizable search functions, extensive databases of hotels and tour providers, and reviews from previous guests. Users can also book tours and activities in their preferred destination, making informed decisions through a comprehensive platform.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "tailwindcss",
         color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/yuviS003/demo-travel-app",
+    live_link: "https://demo-travel-app.vercel.app/",
   },
 ];
 

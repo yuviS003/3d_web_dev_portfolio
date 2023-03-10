@@ -2,7 +2,7 @@ import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, link } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -27,7 +28,19 @@ const ProjectCard = ({
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex gap-2 justify-end m-3 card-img_hover">
+            {live_link ? (
+              <div
+                className="bg-gradient-to-r from-neutral-100 via-cyan-100 to-sky-100 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                onClick={() => window.open(live_link, "_blank")}
+              >
+                <img
+                  src={link}
+                  alt="link"
+                  className="w-[70%] h-[70%] object-contain"
+                />
+              </div>
+            ) : null}
             <div
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               onClick={() => window.open(source_code_link, "_blank")}
@@ -35,7 +48,7 @@ const ProjectCard = ({
               <img
                 src={github}
                 alt="github"
-                className="w-1/2 h-1/2 object-contain"
+                className="w-[60%] h-[60%] object-contain"
               />
             </div>
           </div>

@@ -30,6 +30,8 @@ import treleva from "./company/treleva.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import refine from "./refine-dashboard.png";
+import link from "./link.png";
 
 export {
   logo,
@@ -60,5 +62,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  refine,
   treleva,
+  link,
 };
