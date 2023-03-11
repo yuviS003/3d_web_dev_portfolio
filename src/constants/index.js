@@ -25,6 +25,7 @@ import {
   refine,
   threejs,
   treleva,
+  metaMad
 } from "../assets";
 
 export const navLinks = [
@@ -203,6 +204,28 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/yuviS003/demo-travel-app",
     live_link: "https://demo-travel-app.vercel.app/",
+  },
+  {
+    name: "Metaverse Madness",
+    description:
+      "Metaversus is a cutting-edge landing website for a company specializing in metaverse and virtual reality technology. The sleek and modern design showcases their innovative approach to immersive experiences, and the clear messaging highlights their expertise and passion for creating a new digital frontier.",
+    tags: [
+      {
+        name: "next-13",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "framer",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: metaMad,
+    source_code_link: "https://github.com/yuviS003/next13-metaverse-landing",
+    live_link: "https://next13-metaverse-landing.vercel.app/",
   },
 ];
 

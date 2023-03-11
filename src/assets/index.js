@@ -32,6 +32,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import refine from "./refine-dashboard.png";
 import link from "./link.png";
+import metaMad from "./meta-mad.png";
 
 export {
   logo,
@@ -65,4 +66,5 @@ export {
   refine,
   treleva,
   link,
+  metaMad,
 };
