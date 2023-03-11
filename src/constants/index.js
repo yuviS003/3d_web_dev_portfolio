@@ -245,6 +245,10 @@ const projects = [
         name: "tailwindcss",
         color: "green-text-gradient",
       },
+      {
+        name: "vitejs",
+        color: "orange-text-gradient",
+      },
     ],
     image: hooBank,
     source_code_link: "https://github.com/yuviS003/hooBank-modernUI",
