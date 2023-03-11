@@ -171,7 +171,7 @@ const projects = [
       "Yariga is a web-based platform for buying, selling, and renting real estate. It features customizable search functions, property listings, and rental services. Yariga also provides useful tools such as mortgage calculators and legal advice to assist users in making informed decisions throughout the real estate process.",
     tags: [
       {
-        name: "react",
+        name: "MERN",
         color: "blue-text-gradient",
       },
       {
@@ -181,6 +181,10 @@ const projects = [
       {
         name: "typescript",
         color: "pink-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "orange-text-gradient",
       },
     ],
     image: refine,
