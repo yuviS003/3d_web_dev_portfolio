@@ -25,7 +25,8 @@ import {
   refine,
   threejs,
   treleva,
-  metaMad
+  metaMad,
+  hooBank,
 } from "../assets";
 
 export const navLinks = [
@@ -230,6 +231,24 @@ const projects = [
     image: metaMad,
     source_code_link: "https://github.com/yuviS003/next13-metaverse-landing",
     live_link: "https://next13-metaverse-landing.vercel.app/",
+  },
+  {
+    name: "HooBank",
+    description:
+      "HooBank is a contemporary financial institution that offers state-of-the-art credit card and online payment services. The website's sleek design and advanced technology make banking more accessible and convenient than ever. HooBank's cutting-edge approach sets it apart, providing modern consumers with a banking experience tailored to their needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+    ],
+    image: hooBank,
+    source_code_link: "https://github.com/yuviS003/hooBank-modernUI",
+    live_link: "https://hoo-bank-modern-ui.vercel.app/",
   },
 ];
 

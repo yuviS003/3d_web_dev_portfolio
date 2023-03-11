@@ -33,6 +33,7 @@ import tripguide from "./tripguide.png";
 import refine from "./refine-dashboard.png";
 import link from "./link.png";
 import metaMad from "./meta-mad.png";
+import hooBank from "./hoobank.png";
 
 export {
   logo,
@@ -67,4 +68,5 @@ export {
   treleva,
   link,
   metaMad,
+  hooBank,
 };
