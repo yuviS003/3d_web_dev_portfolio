@@ -27,6 +27,7 @@ import {
   treleva,
   metaMad,
   hooBank,
+  ytClone,
 } from "../assets";
 
 export const navLinks = [
@@ -253,6 +254,28 @@ const projects = [
     image: hooBank,
     source_code_link: "https://github.com/yuviS003/hooBank-modernUI",
     live_link: "https://hoo-bank-modern-ui.vercel.app/",
+  },
+  {
+    name: "YouTube 2.0",
+    description:
+      "This YouTube clone web app, developed with Rapid API, React, and MUI, allows users to explore and enjoy a wide range of videos. With its modern and intuitive design, users can easily browse and search for videos, view channels, and watch videos seamlessly. It offers a personalized viewing experience with features such as customizable themes and subscriptions to channels.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "RapidAPI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ytClone,
+    source_code_link: "https://github.com/yuviS003/youtube_clone",
+    live_link: "https://youtube-clone-yuvis003.vercel.app/",
   },
 ];
 
