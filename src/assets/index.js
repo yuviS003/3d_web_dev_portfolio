@@ -35,6 +35,7 @@ import link from "./link.png";
 import metaMad from "./meta-mad.png";
 import hooBank from "./hoobank.png";
 import ytClone from "./yt2_clone.png";
+import NetflixClone from "./Netflix-clone.png";
 
 export {
   logo,
@@ -71,4 +72,5 @@ export {
   metaMad,
   hooBank,
   ytClone,
+  NetflixClone,
 };

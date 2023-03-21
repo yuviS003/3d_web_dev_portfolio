@@ -28,6 +28,7 @@ import {
   metaMad,
   hooBank,
   ytClone,
+  NetflixClone,
 } from "../assets";
 
 export const navLinks = [
@@ -276,6 +277,32 @@ const projects = [
     image: ytClone,
     source_code_link: "https://github.com/yuviS003/youtube_clone",
     live_link: "https://youtube-clone-yuvis003.vercel.app/",
+  },
+  {
+    name: "Netflix Clone",
+    description:
+      "This Netflix clone project created using Next.js 13 is a web application that allows users to browse and stream movies and TV shows. The site has a modern design, responsive layout, and search functionality. Users can create accounts and add items to their watchlist. The backend is built with Prisma and MongoDB Atlas to ensure seamless data management and scalability.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "atlas",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: NetflixClone,
+    source_code_link: "https://github.com/yuviS003/netflix-clone",
+    live_link: "https://netflix-clone-yuvis003.vercel.app/",
   },
 ];
 
