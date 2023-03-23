@@ -29,6 +29,7 @@ import {
   hooBank,
   ytClone,
   NetflixClone,
+  Gericht,
 } from "../assets";
 
 export const navLinks = [
@@ -303,6 +304,24 @@ const projects = [
     image: NetflixClone,
     source_code_link: "https://github.com/yuviS003/netflix-clone",
     live_link: "https://netflix-clone-yuvis003.vercel.app/",
+  },
+  {
+    name: "Gericht",
+    description:
+      "Gericht's landing website is a React-based portfolio project designed to showcase the features and offerings of a fictional restaurant. It features a clean, modern design with high-quality images, an interactive menu, and information about the restaurant's location and hours of operation. The website is fully responsive and optimized for performance, making it easy to use on any device.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Gericht,
+    source_code_link: "https://github.com/yuviS003/modern-restaurant-ui",
+    live_link: "https://modern-restaurant-ui.vercel.app/",
   },
 ];
 
