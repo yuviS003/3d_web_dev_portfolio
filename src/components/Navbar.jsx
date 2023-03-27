@@ -23,7 +23,7 @@ const Navbar = () => {
         >
           {/* <img src={logo} alt="logo" className="w-14 rounded object-contain" /> */}
           <p className="text-white text-[18px] lg:text-[24px] font-bold cursor-pointer flex py-5">
-            Yuvraj&nbsp;
+            John&nbsp;
             <span className="md:block hidden text">
               |&nbsp;Software Developer
             </span>

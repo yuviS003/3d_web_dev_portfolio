@@ -22,14 +22,7 @@ import {
   carrent,
   jobit,
   tripguide,
-  refine,
   threejs,
-  treleva,
-  metaMad,
-  hooBank,
-  ytClone,
-  NetflixClone,
-  Gericht,
 } from "../assets";
 
 export const navLinks = [
@@ -40,10 +33,6 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
-  },
-  {
-    id: "projects",
-    title: "Projects",
   },
   {
     id: "contact",
@@ -57,7 +46,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Developer",
+    title: "React Native Developer",
     icon: mobile,
   },
   {
@@ -65,7 +54,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Artificial Intelligence",
+    title: "Content Creator",
     icon: creator,
   },
 ];
@@ -127,11 +116,50 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Junior Software Developer",
-    company_name: "Treleva Technologies",
-    icon: treleva,
+    title: "React.js Developer",
+    company_name: "Starbucks",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "March 2020 - April 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "React Native Developer",
+    company_name: "Tesla",
+    icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Sep 2022 - Present",
+    date: "Jan 2021 - Feb 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Web Developer",
+    company_name: "Shopify",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "Jan 2022 - Jan 2023",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full stack Developer",
+    company_name: "Meta",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -170,158 +198,67 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Yariga Properties",
+    name: "Car Rent",
     description:
-      "Yariga is a web-based platform for buying, selling, and renting real estate. It features customizable search functions, property listings, and rental services. Yariga also provides useful tools such as mortgage calculators and legal advice to assist users in making informed decisions throughout the real estate process.",
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "MERN",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "refine",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "typescript",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Job IT",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
       {
-        name: "MUI",
-        color: "orange-text-gradient",
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
       },
     ],
-    image: refine,
-    source_code_link: `https://github.com/yuviS003/MERN-dashboard`,
-    live_link: `https://refine-dashboard-seven.vercel.app/`,
+    image: jobit,
+    source_code_link: "https://github.com/",
   },
   {
     name: "Trip Guide",
     description:
-      "TripGuide is a user-friendly web-based platform for booking tours and hotels. It features customizable search functions, extensive databases of hotels and tour providers, and reviews from previous guests. Users can also book tours and activities in their preferred destination, making informed decisions through a comprehensive platform.",
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "react",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "supabase",
         color: "green-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/yuviS003/demo-travel-app",
-    live_link: "https://demo-travel-app.vercel.app/",
-  },
-  {
-    name: "Metaverse Madness",
-    description:
-      "Metaversus is a cutting-edge landing website for a company specializing in metaverse and virtual reality technology. The sleek and modern design showcases their innovative approach to immersive experiences, and the clear messaging highlights their expertise and passion for creating a new digital frontier.",
-    tags: [
-      {
-        name: "next-13",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "framer",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: metaMad,
-    source_code_link: "https://github.com/yuviS003/next13-metaverse-landing",
-    live_link: "https://next13-metaverse-landing.vercel.app/",
-  },
-  {
-    name: "HooBank",
-    description:
-      "HooBank is a contemporary financial institution that offers state-of-the-art credit card and online payment services. The website's sleek design and advanced technology make banking more accessible and convenient than ever. HooBank's cutting-edge approach sets it apart, providing modern consumers with a banking experience tailored to their needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vitejs",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: hooBank,
-    source_code_link: "https://github.com/yuviS003/hooBank-modernUI",
-    live_link: "https://hoo-bank-modern-ui.vercel.app/",
-  },
-  {
-    name: "YouTube 2.0",
-    description:
-      "This YouTube clone web app, developed with Rapid API, React, and MUI, allows users to explore and enjoy a wide range of videos. With its modern and intuitive design, users can easily browse and search for videos, view channels, and watch videos seamlessly. It offers a personalized viewing experience with features such as customizable themes and subscriptions to channels.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "RapidAPI",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ytClone,
-    source_code_link: "https://github.com/yuviS003/youtube_clone",
-    live_link: "https://youtube-clone-yuvis003.vercel.app/",
-  },
-  {
-    name: "Netflix Clone",
-    description:
-      "This Netflix clone project created using Next.js 13 is a web application that allows users to browse and stream movies and TV shows. The site has a modern design, responsive layout, and search functionality. Users can create accounts and add items to their watchlist. The backend is built with Prisma and MongoDB Atlas to ensure seamless data management and scalability.",
-    tags: [
-      {
-        name: "next",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "prisma",
-        color: "green-text-gradient",
-      },
-      {
-        name: "atlas",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: NetflixClone,
-    source_code_link: "https://github.com/yuviS003/netflix-clone",
-    live_link: "https://netflix-clone-yuvis003.vercel.app/",
-  },
-  {
-    name: "Gericht",
-    description:
-      "Gericht's landing website is a React-based portfolio project designed to showcase the features and offerings of a fictional restaurant. It features a clean, modern design with high-quality images, an interactive menu, and information about the restaurant's location and hours of operation. The website is fully responsive and optimized for performance, making it easy to use on any device.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
       },
       {
         name: "css",
-        color: "green-text-gradient",
+        color: "pink-text-gradient",
       },
     ],
-    image: Gericht,
-    source_code_link: "https://github.com/yuviS003/modern-restaurant-ui",
-    live_link: "https://modern-restaurant-ui.vercel.app/",
+    image: tripguide,
+    source_code_link: "https://github.com/",
   },
 ];
 
